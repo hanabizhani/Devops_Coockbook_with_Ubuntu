@@ -1,0 +1,2 @@
+update your existing list of packages:
+	- sudo apt update

@@ -1,0 +1,7 @@
+1 Installing Git for Linux:	
+	- sudo apt-get install git
+
+
+2 Configuring GitHub:
+	- git config --global user.name "user_name"
+	- git config --global user.email "email_id"
