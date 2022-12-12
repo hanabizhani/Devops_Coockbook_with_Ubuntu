@@ -1,0 +1,8 @@
+Install curl command:
+  - apt install curl
+  
+Install Apt transport:
+This APT transport allows the use of repositories accessed via the HTTP Secure protocol(HTTPS)
+  - apt install pt-transport-https
+  
+
