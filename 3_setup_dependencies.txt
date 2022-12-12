@@ -5,4 +5,17 @@ Install Apt transport:
 This APT transport allows the use of repositories accessed via the HTTP Secure protocol(HTTPS)
   - apt install pt-transport-https
   
+Install certificate in a trust store
+  - apt install ca-certificates
+  
+Update your time zone:
+  - timedatectl set-timezone "your time zone"
+  i.e. timedatectl set-timezone "Asia/Tehran"
+  
+To view all available timezones, run the command below:
+  - timedatectl list-timezones
+  
+Use command below, in order to reboot your machine:
+  - reboot
+
 
