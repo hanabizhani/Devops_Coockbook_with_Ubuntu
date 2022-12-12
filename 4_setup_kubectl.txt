@@ -1,0 +1,1 @@
+Download the latest release with the command:
