@@ -1,1 +1,14 @@
-Download the latest release with the command:
+1. Download the latest release with the command:
+  -  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
+  
+  
+2. Make the kubectl binary executable
+  -  sudo chmod +x ./kubectl
+  
+3. Move the binary in to your PATH.
+  -  sudo mv ./kubectl /usr/local/bin/kubectl
+  
+  
+  
+Reference: https://pwittrock.github.io/docs/tasks/tools/install-kubectl/
+  
