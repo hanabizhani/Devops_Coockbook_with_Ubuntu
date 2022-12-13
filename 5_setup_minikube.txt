@@ -13,8 +13,9 @@ You can check existance of binary file with ls command
 4. Now Minikube is in the path and minikube command is recognized:
   - minikube version
   
-5. Update permission for current user
+5. Manipulate ownership and access permissions
   - sudo chown -R $USER $HOME/.minikube
+  - chmod -R u+wrx $HOME/.minikube
   
 
  
