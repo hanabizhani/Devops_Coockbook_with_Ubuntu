@@ -27,7 +27,8 @@ $ sudo docker ps -a
 $ sudo docker ps
 
 11. Add user1 to the docker group
-  sudo usermod-aG docker user1
+  sudo usermod-aG docker user1  
+Logout and Login after this command
 
 You’ve just successfully installed Docker on Ubuntu!
 
