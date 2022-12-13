@@ -26,6 +26,9 @@ $ sudo docker ps -a
 10. To check for containers in a running state, use the following command:
 $ sudo docker ps
 
+11. Add user1 to the docker group
+  sudo usermod-aG docker user1
+
 You’ve just successfully installed Docker on Ubuntu!
 
 Reference:
