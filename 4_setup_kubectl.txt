@@ -1,12 +1,20 @@
+Before installing a package, it is always recommended to update your server first with the latest available updates
+apt-get update
+
+Install kubectl binary with curl on Linux
+
 1. Download the latest release with the command:
-  -  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
+  -  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
   
   
-2. Make the kubectl binary executable
-  -  sudo chmod +x ./kubectl
+2. Install kubectl
+  -  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
   
-3. Move the binary in to your PATH.
-  -  sudo mv ./kubectl /usr/local/bin/kubectl
+Note: If you do not have root access on the target system, you can still install kubectl to the ~/.local/bin directory:
+  -  chmod +x kubectl
+  -  mkdir -p ~/.local/bin
+  -  mv ./kubectl ~/.local/bin/kubectl
+     # and then append (or prepend) ~/.local/bin to $PATH
   
 4. Check kubectl version
   - ./kubectl version -o json
