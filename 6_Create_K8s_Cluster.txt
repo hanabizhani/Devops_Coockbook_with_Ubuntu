@@ -1,7 +1,28 @@
-Create a k8s cluster with kubernetes:
+Create a k8s cluster with Minikube:
   minikube start --nodes 2 --driver=docker
 This command creates 2 node (1worker and 1master) and define docker as a driver (you can also use virtualbox as a driver)
 Note: The docker driver should not be used with root privilage.
+
+
+After successful minikube start, you can check cluster info:
+  kubectl cluster-info
+  
+Also you can debug and diagnose cluster problems with:
+  kubectl cluster-info dump
+  
+Check how many nodes are started and what is the roles:
+  kubectl get nodes
+  
+Now it's time to create a deployment:
+  kubectl create deployment nginx --image=nginx
+  
+Check if you have any pods in your cluster:
+  kubectl get pods
+You can filter pods information with specific label:
+  kubectl get pods -l app=nginx
+  
+How many deployments do you have on the cluster:
+  kubectl get deployments
 
 
 
